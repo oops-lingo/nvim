@@ -41,3 +41,4 @@ jobs:
           token: ${{ secrets.RELEASE_TOKEN }}
           version: ${{ inputs.version }}
           commit_note: ${{ inputs.commit_note }}
+
