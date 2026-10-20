@@ -4,4 +4,11 @@ version = "0.2.0"
 edition = "2024"
 rust-version = "1.99"
 
+[lib]
+name = "rust_hello_native"
+crate-type = ["cdylib"]
+
 [dependencies]
+anyhow = "1.0.104"
+log = { version = "0.4.34", features = ["alloc"] }
+nvim-oxi = { version = "0.6", features = ["libuv", "neovim-0-11"] }
