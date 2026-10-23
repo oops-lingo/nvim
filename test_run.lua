@@ -1,5 +1,6 @@
-require("oops-lingo").setup({})
+require("oops-lingo").setup({
+  -- debug = true
+})
 
-print("test message")
 
 vim.keymap.set("n", "<leader>m", ":message<CR>")

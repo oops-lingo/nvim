@@ -10,5 +10,6 @@ crate-type = ["cdylib"]
 
 [dependencies]
 anyhow = "1.0.104"
-log = { version = "0.4.34", features = ["alloc"] }
+chrono = "0.4.45"
+log = { version = "0.4.34", features = ["alloc", "std"] }
 nvim-oxi = { version = "0.6", features = ["libuv", "neovim-0-11"] }

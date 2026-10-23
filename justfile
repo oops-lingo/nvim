@@ -22,10 +22,10 @@ precommit:
 
 
 # Launch nvim with a local plugin loaded. This includes, among other things, the user configuration.
-nvim path = "src/main.rs": 
+nvim path = "src/lib.rs": 
     nvim -c 'lua vim.opt.rtp:prepend(vim.fn.getcwd()); require("test_run")' {{path}}
 
 
 # Launch nvim with a local plugin loaded. With the `--clean` flag. Default configuration 
-nvimc path = "src/main.rs": 
+nvimc path = "src/lib.rs": 
     nvim --clean -c 'lua vim.opt.rtp:prepend(vim.fn.getcwd()); require("test_run")' {{path}}
